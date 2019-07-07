@@ -12,7 +12,10 @@
            fetch="https://aosp.tuna.tsinghua.edu.cn/"
            review="android-review.googlesource.com"
            revision="refs/tags/android-9.0.0_r44" />
-
+           
+  <remote  name="github"
+           fetch="https://github.com/" />
+           
   <default revision="refs/heads/mkp"
            remote="mokee"
            sync-c="true"
