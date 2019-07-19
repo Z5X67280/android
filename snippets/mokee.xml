@@ -61,7 +61,8 @@
   <!-- MoKee resources additions -->
   <project path="packages/resources/Aegis" name="MoKee/android_packages_resources_Aegis" />
   <project path="packages/resources/MoKeePay" name="MoKee/android_packages_resources_MoKeePay" revision="refs/heads/master" />
-
+  <project path="packages/resources/devicesettings" name="MoKee/android_packages_resources_devicesettings" revision="mkp" />
+  
   <!-- CodeAurora additions -->
   <project path="device/qcom/sepolicy" name="MoKee/android_device_qcom_sepolicy" groups="qcom,pdk-qcom" />
   <project path="device/qcom/sepolicy-legacy" name="MoKee/android_device_qcom_sepolicy-legacy" groups="qcom,pdk-qcom" />
