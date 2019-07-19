@@ -6,7 +6,7 @@
 <!-- Creator: Keternal (Z5X67280@163.com) -->
  
   <!-- Kernel -->
-  <project path="kernel/xiaomi/msm8953" name="Z5X67280/android_kernel_xiaomi_mms8953-4.9" remote="github" revision="9.0-caf-upstream" />
+  <project path="kernel/xiaomi/msm8953" name="Z5X67280/android_kernel_xiaomi_msm8953-4.9" remote="github" revision="9.0-caf-upstream" />
  
   <!-- Device -->
   <project path="device/xiaomi/vince" name="Z5X67280/android_device_xiaomi_vince-1" remote="github" revision="9.x" depth="1" />
