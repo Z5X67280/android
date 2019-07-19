@@ -16,7 +16,7 @@
   <project path="vendor/xiaomi" name="AmulyaX/proprietary_vendor_xiaomi" remote="github" revision="lineage-16.0" depth="1" />
   
   <!-- Compiler -->
-  <project path="prebuilt/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="krasCGQ/aarch64-linux-android" remote="github" revision="opt-gnu-8.x" depth="1" />
+  <project path="prebuilt/gcc/linux-x86/aarch64/aarch64-linux-android-8.2.1" name="krasCGQ/aarch64-linux-android" remote="github" revision="opt-gnu-8.x" depth="1" />
 
 <!-- End -->
  
