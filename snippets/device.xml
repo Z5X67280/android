@@ -13,7 +13,7 @@
   <project path="device/xiaomi/msm8953-common" name="Z5X67280/android_device_xiaomi_msm8953-common" remote="github" revision="lineage-16.0" />
  
   <!-- Vendor -->
-  <project path="vendor/xiaomi" name="AmulyaX/proprietary_vendor_xiaomi" remote="github" revision="lineage-16.0" depth="1" />
+  <project path="vendor/xiaomi" name="Z5X67280/proprietary_vendor_xiaomi" remote="github" revision="lineage-16.0" depth="1" />
   
   <!-- Compiler -->
   <project path="prebuilt/gcc/linux-x86/aarch64/aarch64-linux-android-8.2.1" name="krasCGQ/aarch64-linux-android" remote="github" revision="opt-gnu-8.x" depth="1" />
