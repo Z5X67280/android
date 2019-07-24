@@ -16,6 +16,9 @@
   <remote  name="github"
            fetch="https://github.com/" />
            
+  <remote  name="gitlab"
+	   fetch="https://gitlab.com/" />
+
   <default revision="refs/heads/mkp"
            remote="mokee"
            sync-c="true"
