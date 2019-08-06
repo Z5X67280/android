@@ -639,6 +639,8 @@
   <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="pdk,tradefed" remote="aosp" />
   <project path="tools/tradefederation/core" name="platform/tools/tradefederation" groups="pdk,tradefed" remote="aosp" />
 
+  <project path="external/busybox" name="omnirom/android_external_busybox" remote="github" revision="android-9.0" />
+  
   <include name="snippets/mokee.xml" />
   <include name="snippets/device.xml" />
   
