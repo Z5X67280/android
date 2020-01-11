@@ -149,4 +149,6 @@
   <project path="mokee/git-repo" name="MoKee/git-repo" groups="tools" revision="stable" />
   <project path="mokee/server-controller" name="MoKee/android_external_mokee_ServerController" revision="master" />
 
+  <project path="packages/resources/devicesettings" name="MoKee/android_packages_resources_devicesettings" revision="mkq" />
+
 </manifest>
