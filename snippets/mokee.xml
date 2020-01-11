@@ -38,16 +38,17 @@
   <project path="packages/apps/Exchange" name="MoKee/android_packages_apps_Exchange" />
   <project path="packages/apps/FMRadio" name="MoKee/android_packages_apps_FMRadio" />
   <project path="packages/apps/Gallery2" name="MoKee/android_packages_apps_Gallery2" revision="master" />
-  <project path="packages/apps/Lawnchair" name="MoKee/android_packages_apps_Lawnchair" />
+  <project path="packages/apps/Lawnchair" name="MoKee/android_packages_apps_Lawnchair" revision="master" />
   <!--<project path="packages/apps/LockClock" name="MoKee/android_packages_apps_LockClock" />-->
-  <project path="packages/apps/MKCenter2" name="MoKee/android_packages_apps_MKCenter2" />
   <project path="packages/apps/MKParts" name="MoKee/android_packages_apps_MKParts" />
+  <project path="packages/apps/MoKeeCenter" name="MoKee/android_packages_apps_MoKeeCenter" />
   <project path="packages/apps/Phonograph" name="MoKee/android_packages_apps_Phonograph" revision="master" />
   <project path="packages/apps/Profiles" name="MoKee/android_packages_apps_Profiles" />
   <project path="packages/apps/Recorder" name="MoKee/android_packages_apps_Recorder" />
   <project path="packages/apps/SetupWizard" name="MoKee/android_packages_apps_SetupWizard" />
   <project path="packages/apps/SimpleCommons" name="MoKee/android_packages_apps_SimpleCommons" revision="master" />
   <project path="packages/apps/Snap" name="MoKee/android_packages_apps_Snap" />
+  <project path="packages/apps/WarpShare" name="MoKee/android_packages_apps_WarpShare" />
   <project path="packages/overlays/MoKee" name="MoKee/android_packages_overlays_MoKee" />
   <!--<project path="packages/providers/WeatherProvider" name="MoKee/android_packages_providers_WeatherProvider" />-->
   <!--<project path="prebuilts/mokee-sdk" name="MoKee/android_prebuilts_mokee-sdk" clone-depth="1" />-->
@@ -55,7 +56,12 @@
   <project path="vendor/mk" name="MoKee/android_vendor_mk" >
     <copyfile src="noop/Android.mk" dest="kernel/Android.mk" />
   </project>
-  <project path="vendor/mk-priv" name="MoKee/android_vendor_mk-priv" />
+  <project path="vendor/mk-priv" name="MoKee/android_vendor_mk-priv" clone-depth="1" >
+    <linkfile src="config/nxp/os_pickup.bp" dest="vendor/nxp/opensource/Android.bp" />
+    <linkfile src="config/nxp/os_pickup.mk" dest="vendor/nxp/opensource/Android.mk" />
+    <linkfile src="config/nxp/os_pickup.bp" dest="vendor/nxp-8150/opensource/Android.bp" />
+    <linkfile src="config/nxp/os_pickup.mk" dest="vendor/nxp-8150/opensource/Android.mk" />
+  </project>
 
   <!-- MoKee resources additions -->
   <project path="packages/resources/Aegis" name="MoKee/android_packages_resources_Aegis" />
@@ -116,6 +122,12 @@
   <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="MoKee/android_vendor_nxp_opensource_packages_apps_Nfc" />
   <project path="vendor/nxp/opensource/halimpl" name="MoKee/android_vendor_nxp_opensource_halimpl" />
   <project path="vendor/nxp/opensource/hidlimpl" name="MoKee/android_vendor_nxp_opensource_hidlimpl" />
+  <project path="vendor/nxp-8150/opensource/interfaces/nfc" name="MoKee/android_vendor_nxp_interfaces_opensource_nfc" revision="mkp-8150" />
+  <project path="vendor/nxp-8150/opensource/commonsys/external/libnfc-nci" name="MoKee/android_vendor_nxp_opensource_external_libnfc-nci" revision="mkp-8150" />
+  <project path="vendor/nxp-8150/opensource/commonsys/frameworks" name="MoKee/android_vendor_nxp_opensource_frameworks" revision="mkp-8150" />
+  <project path="vendor/nxp-8150/opensource/commonsys/packages/apps/Nfc" name="MoKee/android_vendor_nxp_opensource_packages_apps_Nfc" revision="mkp-8150" />
+  <project path="vendor/nxp-8150/opensource/halimpl" name="MoKee/android_vendor_nxp_opensource_halimpl" revision="mkp-8150" />
+  <project path="vendor/nxp-8150/opensource/hidlimpl" name="MoKee/android_vendor_nxp_opensource_hidlimpl" revision="mkp-8150" />
   <project path="vendor/qcom/opensource/audio" name="MoKee/android_vendor_qcom_opensource_audio" groups="qcom,pdk-qcom" />
   <project path="vendor/qcom/opensource/cryptfs_hw" name="MoKee/android_vendor_qcom_opensource_cryptfs_hw" groups="qcom,pdk-qcom" />
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="MoKee/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,pdk-qcom" />
