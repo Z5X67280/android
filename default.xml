@@ -13,6 +13,9 @@
            review="android-review.googlesource.com"
            revision="refs/tags/android-10.0.0_r11" />
 
+  <remote  name="github"
+	   fetch="https://github.com/" />
+
   <default revision="refs/heads/mkq"
            remote="mokee"
            sync-c="true"
@@ -680,6 +683,7 @@
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" remote="aosp" />
 
   <include name="snippets/mokee.xml" />
+  <include name="snippets/device.xml" />
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
